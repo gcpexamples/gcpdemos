@@ -13,6 +13,8 @@ public class TraineeController {
     @Autowired
     private ITraineeService service;
 
+
+
     @PostMapping("/add")
     public TraineeDetails add(@RequestBody CreateTraineeRequest requestData) {
         TraineeDetails response = service.addTrainee(requestData);
