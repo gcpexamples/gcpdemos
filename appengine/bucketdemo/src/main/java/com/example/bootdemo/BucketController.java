@@ -25,12 +25,12 @@ public class BucketController {
     public String fetchTrainees() throws Exception {
         StringBuilder builder = new StringBuilder();
         try (ReadChannel channel = storage.reader("vinproject7-securedbucket", "names.txt")) {
+            // converted from nio to io for understanding, nio should be directly used for performance
             InputStream input = Channels.newInputStream(channel);
             BufferedInputStream bin = new BufferedInputStream(input);
             byte[] buffer = new byte[64 * 1000];
             int readCount;
             while ((readCount = bin.read(buffer)) > 0) {
-                System.out.println("read bytes="+readCount);
                 String readString = new String(buffer,0,readCount);
                 builder.append(readString);
             }
