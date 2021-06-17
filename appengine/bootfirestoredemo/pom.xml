@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>bootjpademo</artifactId>
+    <artifactId>bootfirestoredemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>demo</name>
@@ -55,24 +55,16 @@
 
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>spring-cloud-gcp-starter-firestore</artifactId>
         </dependency>
-
-        <!-- Cloud SQL (MySQL) Starter -->
-        <!--
-             <dependency>
-                 <groupId>com.google.cloud</groupId>
-                 <artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
-             </dependency>
-        -->
-
-        <!-- Cloud SQL (PostgreSQL) Starter -->
 
         <dependency>
-            <groupId>com.google.cloud</groupId>
-            <artifactId>spring-cloud-gcp-starter-sql-postgresql</artifactId>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>7.3.0</version>
         </dependency>
+
 
 
     </dependencies>
