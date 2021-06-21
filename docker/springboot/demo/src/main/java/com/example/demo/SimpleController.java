@@ -8,7 +8,7 @@ public class SimpleController {
 
     @GetMapping("/")
     public String ping(){
-        return "cloud run example";
+        return "docker run example";
     }
 
 }

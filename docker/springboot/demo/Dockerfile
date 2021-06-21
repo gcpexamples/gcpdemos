@@ -1,7 +1,7 @@
 FROM maven:3.8-jdk-11 as builder
 
-# Copy local code to the container image.
 WORKDIR /app
+# Copy local code to the container image.
 COPY pom.xml .
 COPY src ./src
 
