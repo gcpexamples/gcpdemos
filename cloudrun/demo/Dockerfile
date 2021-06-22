@@ -8,10 +8,12 @@ COPY src ./src
 # Build a release artifact.
 RUN mvn package -DskipTests
 
-FROM adoptopenjdk/openjdk11:alpine-slim
+FROM openjdk:11
 
 # Copy the jar to the production image from the builder stage.
 COPY --from=builder /app/target/demo-*.war /demo.war
+
+EXPOSE 8080
 
 # Run the web service on container startup.
 CMD java  -jar /demo.war
