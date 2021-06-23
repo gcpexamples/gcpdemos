@@ -8,7 +8,7 @@ COPY src ./src
 # Build a release artifact.
 RUN mvn package -DskipTests
 
-FROM adoptopenjdk/openjdk11:alpine-slim
+FROM openjdk:11
 
 # Copy the jar to the production image from the builder stage.
 COPY --from=builder /app/target/bootjpademo-*.war /bootjpademo.war
