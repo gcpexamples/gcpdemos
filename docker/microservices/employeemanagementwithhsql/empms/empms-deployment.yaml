@@ -1,23 +1,23 @@
 apiVersion: apps/v1 #version of the Kubernetes API you're using to create this object
 kind: Deployment  #What kind of object you want to create
 metadata: #Data that helps uniquely identify the object
-   name: nginx-deployment
+   name: empms-deployment
 
 spec: #What state you desire for the object
   selector:
     matchLabels:
-      app: nginx 
+      app: empms
 
 
   replicas: 1 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: nginx
+        app: empms
     spec:   #What state you desire for the object
 
       containers:
-      - name: nginx #container name
-        image: nginx #image name
+      - name: empms #container name
+        image: 'gcr.io/vinproject-8/empms' #image name
         ports:
-        - containerPort: 80 # nginx runs on port 80
+        - containerPort: 8587 # nginx runs on port 80

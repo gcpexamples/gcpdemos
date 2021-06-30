@@ -1,23 +1,23 @@
 apiVersion: apps/v1 #version of the Kubernetes API you're using to create this object
 kind: Deployment  #What kind of object you want to create
 metadata: #Data that helps uniquely identify the object
-   name: nginx-deployment
+   name: registry-deployment
 
 spec: #What state you desire for the object
   selector:
     matchLabels:
-      app: nginx 
+      app: registry 
 
 
   replicas: 1 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: nginx
+        app: registry
     spec:   #What state you desire for the object
 
       containers:
-      - name: nginx #container name
-        image: nginx #image name
+      - name: registry #container name
+        image: 'gcr.io/vinproject-8/registry' #image name
         ports:
-        - containerPort: 80 # nginx runs on port 80
+        - containerPort: 8761 # nginx runs on port 80

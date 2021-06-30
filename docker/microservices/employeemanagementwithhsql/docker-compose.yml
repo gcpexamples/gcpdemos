@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    registry: 
+        build: ./registryserver
+        ports: 
+        - 8761:8761
+    
+    projectms:        
+        build: ./projectms
+        ports:
+        - 8586:8586
+
+    empms:        
+        build: ./empms
+        ports:
+        - 8587:8587
+
+   

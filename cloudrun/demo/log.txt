@@ -1,0 +1,59 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.5.0:run (default-cli) > test-compile @ demo >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ demo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/vineet/work/gcpexamplesrepo/gcpexamples/cloudrun/demo/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ demo ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.5.0:run (default-cli) < test-compile @ demo <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.5.0:run (default-cli) @ demo ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.0)
+
+2021-06-29 16:30:13.470  INFO 25819 --- [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 11.0.11 on vineet-omen-laptop with PID 25819 (/home/vineet/work/gcpexamplesrepo/gcpexamples/cloudrun/demo/target/classes started by vineet in /home/vineet/work/gcpexamplesrepo/gcpexamples/cloudrun/demo)
+2021-06-29 16:30:13.472  INFO 25819 --- [           main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2021-06-29 16:30:14.085  INFO 25819 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-29 16:30:14.093  INFO 25819 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-29 16:30:14.093  INFO 25819 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-29 16:30:14.130  INFO 25819 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-29 16:30:14.130  INFO 25819 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 624 ms
+2021-06-29 16:30:14.332  INFO 25819 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-29 16:30:14.340  INFO 25819 --- [           main] com.example.demo.DemoApplication         : Started DemoApplication in 1.21 seconds (JVM running for 1.484)
+2021-06-29 16:30:14.341  INFO 25819 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-29 16:30:14.342  INFO 25819 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-29 16:30:37.595  INFO 25819 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-29 16:30:37.596  INFO 25819 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-29 16:30:37.597  INFO 25819 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  29.714 s
+[INFO] Finished at: 2021-06-29T16:30:41+05:30
+[INFO] ------------------------------------------------------------------------

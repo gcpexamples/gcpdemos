@@ -6,7 +6,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Build a release artifact.
-RUN mvn package -DskipTests
+RUN mvn package -DskipTests=true
 
 FROM openjdk:11
 

@@ -9,4 +9,4 @@ spec: #What state you desire for the object
     - port: 80  #port at which service is internally available
       targetPort: 80 #port of container
       nodePort: 30000  # port at which service is externally available  range 30000- 32767 
-  type: NodePort
+  type: LoadBalancer
