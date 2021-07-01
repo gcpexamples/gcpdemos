@@ -1,0 +1,24 @@
+apiVersion: apps/v1 #version of the Kubernetes API you're using to create this object
+kind: Deployment  #What kind of object you want to create
+metadata: #Data that helps uniquely identify the object
+   name: greetingclient
+
+spec: #What state you desire for the object
+  selector:
+    matchLabels:
+      app: greetingclient
+
+
+  replicas: 1 # tells deployment to run 1 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: greetingclient
+    spec:   #What state you desire for the object
+
+      containers:
+      - name: greetingclient #container name
+        image: 'gcr.io/vinproject-8/greetingclient' #image name
+        ports:
+        - containerPort: 8080 # greeting server runs on port 8586
+
