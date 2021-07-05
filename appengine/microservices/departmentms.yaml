@@ -1,0 +1,3 @@
+runtime: java11
+service : default
+entrypoint: java -Xmx64m -jar departmentms-0.0.1-SNAPSHOT.war

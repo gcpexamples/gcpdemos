@@ -1,0 +1,3 @@
+runtime: java11
+service : empms
+entrypoint: java -Xmx64m -jar empms-0.0.1-SNAPSHOT.war
