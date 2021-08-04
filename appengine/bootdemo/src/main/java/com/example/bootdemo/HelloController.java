@@ -11,4 +11,8 @@ public class HelloController {
         return "hello appengine example";
     }
 
+    @GetMapping("/ping")
+    public String ping(){
+        return "ping back, Application is running";
+    }
 }
