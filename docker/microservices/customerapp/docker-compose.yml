@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    registry: 
+        build: registryserver
+        ports: 
+        - 8480:8480
+    
+    product:        
+        build: productmsmicroservice
+        ports:
+        - 8485:8485
+
+    customer:        
+        build: customermicroservice
+        ports:
+        - 8484:8484
+
+   
