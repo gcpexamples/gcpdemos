@@ -6,8 +6,8 @@ spec: #What state you desire for the object
   selector:
     app: greetingclient
   ports:
-    - port: 8080  #port at which service is internally available
-      targetPort: 8080 #port of container
+    - port: 9001  #port at which service is internally available
+      targetPort: 9001 #port of container
       name: http
     #  nodePort: 30002  # port at which service is externally available  range 30000- 32767
-  type: NodePort
+  type: LoadBalancer

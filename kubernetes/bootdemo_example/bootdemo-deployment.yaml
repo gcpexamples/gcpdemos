@@ -1,9 +1,9 @@
 apiVersion: apps/v1 #version of the Kubernetes API you're using to create this object
 kind: Deployment  #What kind of object you want to create
-metadata: #Data that helps uniquely identify the object
+metadata: #deployment name, helps uniquely identify the object
    name: bootdemo
 
-spec: #What state you desire for the object
+spec:  
   selector:
     matchLabels:
       app: bootdemo 

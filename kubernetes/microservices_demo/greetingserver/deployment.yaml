@@ -18,6 +18,6 @@ spec: #What state you desire for the object
 
       containers:
       - name: greetingserver #container name
-        image: 'gcr.io/vinproject-8/greetingserver' #image name
+        image: 'vineetsemwal/greetingserver' #image name
         ports:
-        - containerPort: 8080 # greeting server runs on port 8585
+        - containerPort: 9000 # greeting server runs on port 9000
