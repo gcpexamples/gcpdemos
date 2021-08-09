@@ -163,6 +163,7 @@ local.properties
 
 *.DS_Store
 
+**/target
 !*/target/
 */target/*
 !*/target/generated-sources/
