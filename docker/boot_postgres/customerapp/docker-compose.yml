@@ -1,8 +1,16 @@
-version: '3'
+version: '3.8'
 
 services:
     
     
+   
+    customer:        
+        build: customermsrestdatajpa
+        ports:
+        - 8484:8484
+     
+  
+
     postgres:        
         image: postgres:13.3
         ports:
@@ -12,11 +20,12 @@ services:
             POSTGRES_USER: postgres
             POSTGRES_PASSWORD: scooby
             POSTGRES_DB: training
-    
-    customer:        
-        build: customermsrestdatajpa
-        ports:
-        - 8484:8484
 
-   
+        volumes:
+         - pgdata:/var/lib/postgresql/data
+
+ 
+volumes:
+  pgdata:    
     
+ 
