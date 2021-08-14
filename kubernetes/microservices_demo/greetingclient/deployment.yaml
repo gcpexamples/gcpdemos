@@ -18,7 +18,7 @@ spec: #What state you desire for the object
 
       containers:
       - name: greetingclient #container name
-        image: 'vineetsemwal/greetingclient' #image name
+        image: 'vineetsemwal/greetingclient2' #image name
         ports:
         - containerPort: 9001 # greeting client runs on port 9001
 
