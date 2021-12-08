@@ -42,14 +42,16 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.hsqldb/hsqldb -->
+		
 		<!--
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<version>${hsqldb.version}</version>
 		</dependency>
-		-->
 		
+		-->
+   
                  <dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -62,6 +64,13 @@
 	       <artifactId>spring-boot-starter-validation</artifactId>			
 		
 		</dependency>
+		
+		 <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.5.12</version>
+        </dependency>
+
 		
 	</dependencies>
 
