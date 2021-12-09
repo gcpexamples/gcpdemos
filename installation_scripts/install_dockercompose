@@ -1,0 +1,7 @@
+#docker compose install script
+
+#download docker compose binary and keep in /us/local/bin 
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+#give executable permission to binary
+sudo chmod +x /usr/local/bin/docker-compose
+
