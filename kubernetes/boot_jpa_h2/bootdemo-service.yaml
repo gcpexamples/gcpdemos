@@ -10,4 +10,4 @@ spec: #What state you desire for the object
       targetPort: 8484 #port of container
       #nodePort: 30001  # port at which service is externally available  range 30000- 32767 
       name: http
-  type: NodePort
+  type: LoadBalancer

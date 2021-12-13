@@ -3,18 +3,19 @@ kind: Deployment  #What kind of object you want to create
 metadata: #Data that helps uniquely identify the object
    name: postgres
 
-spec: #What state you desire for the object
+#pod name
+spec: 
   selector:
     matchLabels:
       app: postgres 
 
-
+#pods description
   replicas: 1 # tells deployment to run 1 pods matching the template
   template:
     metadata:
       labels:
         app: postgres
-    spec:   #What state you desire for the object
+    spec:  
 
       containers:
       - name:  postgres #container name

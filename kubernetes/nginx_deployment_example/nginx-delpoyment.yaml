@@ -1,7 +1,7 @@
 apiVersion: apps/v1 #version of the Kubernetes API you're using to create this object
 kind: Deployment  #What kind of object you want to create
 metadata: #Data that helps uniquely identify the object
-   name: nginx-deployment
+   name: nginx
 
 spec: #What state you desire for the object
   selector:
@@ -18,6 +18,6 @@ spec: #What state you desire for the object
 
       containers:
       - name: nginx #container name
-        image: nginx #image name
+        image: nginx:1.21.4 #image name
         ports:
         - containerPort: 80 # nginx runs on port 80

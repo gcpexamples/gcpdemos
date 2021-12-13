@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:11
 
 
 # Copy the jar to the production image from the builder stage.
