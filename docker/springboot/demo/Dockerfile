@@ -1,20 +1,12 @@
-FROM maven:3.8-jdk-11 as builder
-
-WORKDIR /app
-# Copy local code to the container image.
-COPY pom.xml .
-COPY src ./src
-
-# Build a release artifact.
-RUN mvn package -DskipTests
-
 FROM openjdk:11
 
+
 # Copy the jar to the production image from the builder stage.
-COPY --from=builder /app/target/demo-*.war /demo.war
+COPY  build/libs/demo-*.jar /demo.jar
 
-# expose container port for outer world
-EXPOSE 8585
 
-# Run the web service on container startup.
-CMD java  -jar /demo.war
+# Run the web service on cjntainer startup.
+CMD java  -jar /demo.jar
+
+
+
