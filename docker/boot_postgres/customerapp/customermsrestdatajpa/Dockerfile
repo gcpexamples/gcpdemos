@@ -5,7 +5,7 @@ FROM openjdk:11
 
 
 
-COPY  build/libs/demo.war /
+COPY  build/libs/customermsrestdatajpa.war /demo.war
 
 
 

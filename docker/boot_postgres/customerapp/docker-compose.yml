@@ -21,8 +21,6 @@ services:
             POSTGRES_PASSWORD: scooby
             POSTGRES_DB: training
 
-        volumes:
-         - pgdata:/var/lib/postgresql/data
 
  
 volumes:
