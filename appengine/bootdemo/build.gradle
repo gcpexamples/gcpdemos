@@ -24,7 +24,7 @@ apply plugin: 'com.google.cloud.tools.appengine'
 
 appengine {  // App Engine tasks configuration
     deploy {   // deploy configuration
-        projectId = 'jcgcp-11' // gcloud config set project
+        projectId = 'jcgcp-11' 
         version = 'GCLOUD_CONFIG'   // gcloud to generate a version
          
     }
