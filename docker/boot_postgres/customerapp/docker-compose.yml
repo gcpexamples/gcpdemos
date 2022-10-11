@@ -12,18 +12,14 @@ services:
   
 
     postgres:        
-        image: postgres:13.3
+        image: postgres:14.5
         ports:
         - 5432:5432
-        restart: always
+       
         environment:
             POSTGRES_USER: postgres
             POSTGRES_PASSWORD: scooby
             POSTGRES_DB: training
 
-
- 
-volumes:
-  pgdata:    
-    
+       
  

@@ -5,10 +5,10 @@ FROM openjdk:11
 
 
 
-COPY  build/libs/customermsrestdatajpa.war /demo.war
+COPY  target/demo.jar /
 
 
 
 # Run the web service on container startup.
- CMD  java -jar /demo.war
+ CMD  java -jar /demo.jar
 
