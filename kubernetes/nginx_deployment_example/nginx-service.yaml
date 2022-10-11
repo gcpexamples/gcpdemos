@@ -3,7 +3,7 @@ kind: Service #What kind of object you want to create
 metadata: #service name that helps uniquely identify the object
   name: nginx
   
-#specifies pod to use
+#specifies pods to use
 spec: 
   selector:
     app: nginx

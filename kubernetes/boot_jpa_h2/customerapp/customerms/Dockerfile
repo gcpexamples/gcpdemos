@@ -1,10 +1,10 @@
-FROM openjdk:8
+FROM openjdk:11
 
 
 # Copy the jar to the production image from the builder stage.
-COPY  target/customerms-*.war /demo.war
+COPY  target/demo.jar /demo.jar
 
 # Run the web service on container startup.
-CMD java  -jar /demo.war
+CMD java  -jar /demo.jar
 
 
