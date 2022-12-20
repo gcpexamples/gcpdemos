@@ -5,8 +5,8 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn package
 # Copy the jar to the production image from the builder stage.
-COPY target/customermsrestdatajpa-*.war /demo.war
+COPY target/cicddemo2-*.war /demo.war
 FROM openjdk:18-oraclelinux7
 #expose port in container for traffic from outer world
-EXPOSE 8484
+EXPOSE 8585
 CMD java -jar /demo.war

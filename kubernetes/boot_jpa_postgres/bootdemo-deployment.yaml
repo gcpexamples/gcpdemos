@@ -18,6 +18,6 @@ spec:
 
       containers:
       - name: customerms #container name
-        image: 'vineetsemwal/customerpostgres:v1' #image name
+        image: 'vineetsemwal/customerpg:v1' #image name
         ports:
         - containerPort: 8484 # demo runs on port 8484

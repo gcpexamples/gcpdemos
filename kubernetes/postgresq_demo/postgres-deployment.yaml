@@ -19,7 +19,7 @@ spec:
 
       containers:
       - name:  postgres #container name
-        image: postgres:13.3 #image name
+        image: postgres:14.5 #image name
         ports:
         - containerPort: 5432 # postgres runs on port 5432
         

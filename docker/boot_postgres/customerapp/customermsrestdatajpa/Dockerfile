@@ -5,7 +5,7 @@ FROM openjdk:11
 
 
 
-COPY  target/demo.jar /
+COPY  target/customermsrestdatajpa-0.0.1-SNAPSHOT.jar /demo.jar
 
 
 
