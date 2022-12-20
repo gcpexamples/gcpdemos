@@ -3,7 +3,7 @@ FROM maven:3-openjdk-18
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
-RUN mvn package
+RUN mvn package -DskipTests=true
 # Copy the jar to the production image from the builder stage.
 
 FROM openjdk:18-oraclelinux7
