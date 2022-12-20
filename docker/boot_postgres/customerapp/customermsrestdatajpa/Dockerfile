@@ -1,11 +1,11 @@
-FROM openjdk:11
+FROM openjdk:18.0.2-jdk
 
 # Copy local code to the container image.
 #WORKDIR /app
 
 
 
-COPY  target/customermsrestdatajpa-0.0.1-SNAPSHOT.jar /demo.jar
+COPY  target/customermsrestdatajpa-*.jar /demo.jar
 
 
 

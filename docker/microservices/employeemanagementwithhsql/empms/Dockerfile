@@ -1,14 +1,9 @@
+FROM openjdk:18.0.2-jdk
 
-FROM maven:3.8-jdk-11 as builder
 
-# Copy local code to the container image.
-WORKDIR /app
-RUN mvn package -DskipTests=true
-
-COPY target/empms-*.war  /empms.war
+# Copy the jar to the production image from the builder stage.
+COPY  target/empms-*.war /demo.war
 
 EXPOSE 8587
-FROM openjdk:11
 # Run the web service on container startup.
-CMD java  -jar /empms.war
-
+CMD java  -jar /demo.war
