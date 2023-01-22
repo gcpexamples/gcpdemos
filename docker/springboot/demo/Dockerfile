@@ -1,3 +1,3 @@
-FROM openjdk:11  
-COPY target/demo-*.war /demo.war     
-CMD java -jar /demo.war 
+FROM adoptopenjdk/openjdk16:alpine-jre
+COPY target/demo-*.war /app.war     
+CMD java -jar /app.war 

@@ -1,0 +1,6 @@
+FROM tomcat:8.5.85-jre11
+WORKDIR webapps
+COPY  target/demo-*.war ./demo.war
+#expose port in container for traffic from outer world
+EXPOSE 8080
+RUN rm -rf ROOT && mv demo.war ROOT.war
