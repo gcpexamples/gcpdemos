@@ -1,9 +1,11 @@
 FROM maven:3-openjdk-18
 # Copy local code to the container image.
+
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
-RUN mvn package -DskipTests=true
+
+RUN mvn package -Dmaven.repo.local=/.m2/repo
 # Copy the jar to the production image from the builder stage.
 
 FROM openjdk:18-oraclelinux7

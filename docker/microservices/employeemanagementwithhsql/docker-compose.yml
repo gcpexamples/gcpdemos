@@ -6,14 +6,6 @@ services:
         ports: 
         - 8761:8761
     
-    projectms:        
-        build: projectms
-        ports:
-        - 8586:8586
-
-    empms:        
-        build: empms
-        ports:
-        - 8587:8587
-
-   
+        volumes:       
+          - /home/vineet/.m2/repository:/.m2/repository
+    

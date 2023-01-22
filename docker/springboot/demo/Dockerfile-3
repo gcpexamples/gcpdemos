@@ -1,4 +1,4 @@
-FROM maven:3-openjdk-18
+FROM maven:3-openjdk-11 as mavenstage
 # Copy local code to the container image.
 WORKDIR /app
 COPY pom.xml .
@@ -6,9 +6,8 @@ COPY src ./src
 RUN mvn package -DskipTests=true
 # Copy the jar to the production image from the builder stage.
 
-FROM openjdk:18-oraclelinux7
-COPY target/registryserver-*.war /demo.war
-
+FROM adoptopenjdk/openjdk16:alpine-jre
+COPY --from=mavenstage /app/target/demo-*.war /demo.war
 #expose port in container for traffic from outer world
-EXPOSE 8484
+EXPOSE 8585
 CMD java -jar /demo.war
