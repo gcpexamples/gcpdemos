@@ -21,15 +21,23 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<!--
+
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
 				</exclusion>
 			</exclusions>
-			-->
+
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
 
 
 	</dependencies>
@@ -37,12 +45,13 @@
 	<build>
 		<plugins>
 
+			<!--
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			-->
 
-			<!--
 			<plugin>
 
 				<groupId>org.apache.maven.plugins</groupId>
@@ -53,7 +62,7 @@
 
 				</configuration>
 			</plugin>
--->
+
 
 		</plugins>
 	</build>
