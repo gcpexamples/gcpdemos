@@ -1,0 +1,5 @@
+FROM tomcat:8.5.85-jre11
+WORKDIR webapps
+COPY  target/demo-*.war ./demo.war
+EXPOSE 8080
+

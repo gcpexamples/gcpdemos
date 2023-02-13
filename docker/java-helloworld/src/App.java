@@ -7,7 +7,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Welcome to Docker, jan 22" );
+        System.out.println( "Welcome to Docker, 13 feb" );
     }
 }
 
